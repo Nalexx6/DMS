@@ -1,7 +1,7 @@
 import util
 import converter as cvt
 
-song_name = 'nocturne_27_2_(c)inoue'
+song_name = 'for_elise_by_beethoven'
 
 
 if __name__ == "__main__":
@@ -30,8 +30,6 @@ if __name__ == "__main__":
     notes = util.csv_to_np_array(notes_path)
     print("Reading tempos")
     tempos = util.csv_to_np_array(tempos_path)
-
-    print(tempos)
 
     print("Generating track")
     new_mid = cvt.gen_mid(notes, tempos)
